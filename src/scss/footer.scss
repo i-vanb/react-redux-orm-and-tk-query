@@ -1,0 +1,42 @@
+.footer{
+  background-color: $very-light-grey;
+  &__content{
+    display: flex;
+    padding: 32px 0;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 -20px;
+  }
+
+  &__logo{
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 1.16;
+    padding: 0 20px;
+    flex: 1;
+    text-align: left;
+    cursor: default;
+  }
+
+  &__info{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 31px;
+    &-title{
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  }
+  &__sub{
+    padding: 35px 0;
+    text-align: center;
+    &>span{
+      margin: 0 20px;
+    }
+
+  }
+}

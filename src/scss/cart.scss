@@ -1,0 +1,147 @@
+.cart{
+  &__title{
+    margin-bottom: 30px;
+    span{
+      font-size: 20px;
+      font-weight:  700;
+      margin-right: 30px;
+    }
+    a{
+      font-size: 16px;
+      font-weight: 600;
+      color: $pink;
+      cursor: pointer;
+    }
+  }
+  &-table{
+    border: 1px $menu-blue solid;
+    border-radius: 20px;
+    &__wrapper{
+      padding: 20px 58px;
+    }
+    &__row{
+      padding: 16px 0;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      align-items: flex-start;
+      &:not(:last-child){
+        border-bottom: 1px solid $menu-blue;
+      }
+      &__icon{
+        width: 60px;
+        height: 65px;
+        background-image: url("./assets/phone-default.png");
+        background-size: cover;
+        background-position-x: center;
+
+      }
+      &__info{
+        max-width: 290px;
+        flex: 1;
+        p{
+          margin: 0 0 10px 0;
+          font-size: 16px;
+        }
+      }
+      &__remove{
+        flex: 1;
+        text-align: end;
+      }
+      &__count{
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        font-size: 16px;
+        padding: 11px 18px;
+        border: 1px $menu-blue solid;
+        align-items: center;
+        border-radius: 35px;
+        &-dec{
+          font-size: 30px;
+          width: 20px;
+          height: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          line-height: 1;
+          color: $menu-blue;
+          cursor: pointer;
+          &:hover{
+            color: $blue;
+          }
+        }
+        &-inc{
+          font-size: 30px;
+          width: 20px;
+          height: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          line-height: 1;
+          color: $menu-blue;
+          cursor: pointer;
+          &:hover{
+            color: $blue;
+          }
+        }
+        &-num{
+
+        }
+      }
+    }
+
+    &__header{
+      padding: 25px 200px 25px 58px;
+      border: 1px $menu-blue solid;
+      border-radius: 20px;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+
+      &__name{
+        flex: 1;
+      }
+
+      &__price{
+        flex: 1;
+        div:not(:last-child){
+          margin-bottom: 5px;
+        }
+      }
+      &-btn{
+        flex: 1;
+        button{
+          padding: 15px 65px;
+        }
+      }
+      &__image{
+        //height: 100%;
+        //box-sizing: border-box;
+        &-1{
+          position: absolute;
+          top: 0;
+          height: 100%;
+          right: 85px;
+        }
+        &-2{
+          position: absolute;
+          top: 0;
+          height: 57px;
+          right: 60px;
+        }
+        &-3{
+          position: absolute;
+          top: 25px;
+          height: 61px;
+          right: 15px;
+        }
+
+      }
+
+    }
+  }
+
+
+}

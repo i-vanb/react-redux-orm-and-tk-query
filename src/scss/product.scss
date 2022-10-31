@@ -1,0 +1,139 @@
+.product{
+  &-list{
+    &__container{}
+    &__content{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap:20px;
+      margin-bottom: 30px;
+    }
+    &__control{
+      text-align: center;
+    }
+
+  }
+
+
+  &-card{
+    padding: 15px 0;
+    width: 214px;
+
+    &__variations{
+      &__container{
+
+      }
+      &__input{
+        width: 20px;
+        height: 20px;
+        box-sizing: border-box;
+        cursor: pointer;
+        border-radius: 15px;
+        border: 2px solid $blue;
+        background-color: $white;
+
+        &.active{
+          background-color: $blue;
+        }
+      }
+      &__row{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+      }
+
+    }
+
+    &__img{
+      width: 100%;
+      box-sizing: border-box;
+      height: 153px;
+      margin-bottom: 5px;
+      position: relative;
+      overflow: hidden;
+      background-image: url("./assets/product-empty.png");
+      background-size: cover;
+      background-position-x: center;
+
+      &-empty{
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        background-image: url("./assets/product-empty.png");
+        background-size: cover;
+        background-position-x: center;
+      }
+
+      img{
+        width: inherit;
+
+      }
+    }
+    &__cat{
+      position: absolute;
+      bottom: 15px;
+      width: 100%;
+      overflow: hidden;
+      //overflow-x: auto;
+      //overflow-y: hidden;
+      //&::-webkit-scrollbar {
+      //  display: none;
+      //}
+
+      &-wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 5px;
+        //margin-bottom: 30px;
+      }
+    }
+    &__label{
+      margin-bottom: 5px;
+      min-height: 40px
+    }
+    &__price{
+      color: $blue;
+      font-weight: 600;
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+    &__sale{
+      &>*:not(:last-child){
+        margin-right: 15px;
+      }
+      margin-bottom: 10px;
+    }
+
+    &__btn{
+      &__remove-wrapper{
+        padding: 10px 25px;
+        border-radius: 50px;
+        border: 1px solid $pink;
+        cursor: pointer;
+        line-height: normal;
+        transition: all .3s;
+        background-color: $white;
+        color: $pink;
+        text-align: center;
+        &:before{
+          content:'Уже в корзине';
+          color: $pink;
+          text-align: center;
+        }
+
+
+
+        &:hover{
+          background-color: $pink;
+          &:before{
+            content:'Удалить';
+            color: $white;
+            text-align: center;
+          }
+        }
+      }
+
+    }
+  }
+}

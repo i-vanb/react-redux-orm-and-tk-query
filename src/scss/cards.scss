@@ -1,0 +1,59 @@
+.card{
+  &-sale{
+    width: 311px;
+    height: 143px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: $blue;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 30px;
+    border: 1px solid $pink;
+    margin-bottom: 33px;
+    gap: 17px;
+
+    &__title{
+      margin-bottom: 10px;
+    }
+    &__img{
+      background-image: url("./assets/image-sales.png");
+      width: 91px;
+      height: 82px;
+      position: relative;
+      left: -10px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position-y: center;
+    }
+
+  }
+  &-category{
+    width: 311px;
+    height: 168px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: font-size .2s;
+    &:hover{
+      font-size: 21px;
+    }
+
+    &:not(:last-child){
+      margin-bottom: 33px;
+    }
+
+    &__new1{
+      background-image: url("./assets/image-category1.jpg");
+    }
+    &__new2{
+      background-image: url("./assets/image-category2.png");
+    }
+  }
+}

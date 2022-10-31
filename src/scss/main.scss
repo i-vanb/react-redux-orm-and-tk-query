@@ -1,0 +1,99 @@
+.app{
+  &__container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  &__main{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+
+    &-section{
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    &-content{
+      flex:1;
+      &__wrapper{
+        padding: 30px 0 55px;
+
+      }
+    }
+    &-sidebar{
+      border-left: 1px solid $secondary;
+      padding: 24px 24px 24px 16px;
+
+      &__wrapper{
+        position: sticky;
+        top: 24px;
+
+      }
+    }
+  }
+}
+
+.btn{
+  padding: 10px 25px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all .3s;
+
+  &-icon{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all .3s;
+  }
+  &-remove{
+    width: 20px;
+    height: 20px;
+    background-image: url("./assets/trashcan.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: $white;
+  }
+
+  &-big{
+    padding: 16px 44px;
+  }
+
+  &-outline{
+    background-color: $white;
+    color: $blue;
+    border: 1px solid $blue;
+    font-size: 16px;
+    font-weight: 600;
+    &:hover{
+      background-color: $blue;
+      color: $white;
+    }
+  }
+
+
+
+  &-main{
+    background-color: $blue;
+    color: $white;
+    font-size: 16px;
+    font-weight: 600;
+    &:hover{
+      color: $very-light-grey;
+    }
+  }
+
+  &-secondary{
+    background-color: $secondary;
+    color: $primary-body;
+    font-size: 16px;
+    font-weight: 600;
+    &:hover{
+      color: $primary-dark;
+    }
+  }
+}

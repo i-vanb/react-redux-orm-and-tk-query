@@ -1,0 +1,33 @@
+.shipping{
+  &__container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+  }
+
+  &__sidebar{
+    flex: 1;
+
+    &__header{
+      margin-bottom: 30px;
+    }
+
+    &__date-time{
+      color: $primary-body;
+      margin-bottom: 30px;
+      &>span:not(:last-child){
+        margin-right: 10px;
+      }
+    }
+
+    &__input{
+      margin-bottom: 10px;
+
+    }
+  }
+  &__content{
+    flex: 2;
+  }
+
+}
